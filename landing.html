@@ -34,6 +34,13 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#lead-collection">Help us grow!</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -61,6 +68,61 @@
       </div>
     </div>
   </header>
+
+  <!-- Lead Collection Section -->
+  <section class="page-section bg-primary" id="lead-collection">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">Help us grow!</h2>
+
+          <hr class="divider light my-4">
+
+          <p class="text-white">
+              {PLACEHOLDER}
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt lectus a enim vestibulum tincidunt. Proin cursus sapien urna. Ut eu gravida leo. Donec a vulputate mi. Nam erat diam, blandit at vehicula sed, accumsan tempus nunc. Cras efficitur sodales nunc sed molestie. Mauris in odio sit amet dui molestie fringilla. Donec sed tellus consequat, accumsan arcu eget, sollicitudin orci. Donec a nunc imperdiet metus maximus mattis. Proin porta tellus at lorem accumsan gravida. Proin nec sagittis leo, eget feugiat turpis. Vestibulum non nunc ut ante sagittis consectetur. Cras a metus ipsum.
+          </p>
+
+          <hr class="divider light my-4">
+
+          <form class="text-left text-white" name="lead-collection-form" accept-charset="utf-8" action="https://formspree.io/dss-meetup@mailinator.com" method="post">
+            <fieldset>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="firstname">First Name</label>
+                      <input type="text" class="form-control form-control-lg" name="firstname" id="firstname" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" class="form-control form-control-lg" name="lastname" id="lastname" placeholder="Last Name">
+                    </div>
+                  </div>
+              <div class="form-group">
+                <label for="email-address">Email Address</label>
+                <input class="form-control form-control-lg" type="email" name="email" id="email-address" placeholder="email@domain.tld" required="">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input class="form-control form-control-lg" type="phone" name="phone" id="phone" placeholder="0712 345 689">
+              </div>
+              <input type="hidden" name="_subject" id="email-subject" value="Lead Collection Submission">
+            </fieldset>
+            <div class="text-center">
+              <input class="btn btn-secondary btn-lg" type="submit" value="Submit">
+            </div>
+          </form>
+
+          <hr class="divider light my-4">
+
+          <p class="text-white">
+            Mulțumim!
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
